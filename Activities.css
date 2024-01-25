@@ -1,0 +1,53 @@
+body {
+    font-family: "Audiowide", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(rgb(91, 100, 57), rgb(139, 167, 132), #eee);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+main {
+    padding: 10px;
+    text-align: center;
+    animation: moveContent 1s infinite alternate;
+}
+
+h1, h2 {
+    color: #4d8146;
+}
+
+p {
+    line-height: 1.6;
+}
+
+nav {
+    background-image: linear-gradient(#eee, rgb(215, 245, 207), #eee);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+@keyframes moveContent {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(60px);
+    }
+}
